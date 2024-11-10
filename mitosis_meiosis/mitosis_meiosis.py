@@ -21,9 +21,6 @@ config()
 #=============================================================================
 
 
-
-
-
 def transform(x, y):
     return [x, y , 0]
 
@@ -46,11 +43,6 @@ class genitik(Scene):
             self.play(Group(*self.mobjects).animate.scale(scale), run_time=runtime)
 
             
-
-            
-
-
-
             #=============================================================================
 
 
@@ -98,7 +90,6 @@ class genitik(Scene):
                 colors = [RED, RED_A, RED_B, RED_C, RED_D, RED_E] # cloors for chromatids in kern
                 chromatids = [] # list for saving all original chromatids
 
-                
 
                 for i in range(15): # small chrms in bckg
 
@@ -204,8 +195,6 @@ class genitik(Scene):
                         chromatid_insp_r.add(line) # add to right side
                     
                     self.play(Create(line), run_time=0.1) # show the acid
-
-                    
 
                     rnd_y += segm # move up by one segement
                 
@@ -622,8 +611,6 @@ class genitik(Scene):
             
 
                 self.play(FadeIn(zellk_n)) # text corr
-
-
 
                 self.wait(3)
 
