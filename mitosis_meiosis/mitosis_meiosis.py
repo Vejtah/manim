@@ -413,8 +413,9 @@ class genitik(Scene):
             self.wait(3) # think about your life
 
         # ========================================================================================----
+
         
-        def intro_meiose():
+        def intro_meiose(): 
             title = Text("Meiose", font_size=50)
             self.play(Write(title))
             self.wait(1.5)
@@ -483,13 +484,13 @@ class genitik(Scene):
                 chromatid_l.set_points_as_corners([[-0.2, 1, 0], [-0.2, -1, 0]])
                 chromatid_l.set_stroke(width=10, color=DARK_BLUE)
                 chromatid_l.set_z_index(16)
-                #chromatids.append(chromatid_l)
+
 
                 chromatid_r = VMobject()
                 chromatid_r.set_points_as_corners([[0.2, 1, 0], [0.2, -1, 0]])
                 chromatid_r.set_stroke(width=10, color=PURPLE)
                 chromatid_r.set_z_index(16)
-                #chromatids.append(chromatid_r)
+
 
                 self.play(Create(chromatid_l),
                   Create(chromatid_r),
@@ -521,7 +522,9 @@ class genitik(Scene):
 
                 zoom(3)
 
-                # grid()
+                # welcome to the dark side
+                # nothing is cler down here
+                # but it works
 
                 
                 point_u = Circle(radius=0.1, color=RED_E, fill_opacity=1).set_z_index(18)
@@ -624,10 +627,7 @@ class genitik(Scene):
 
                 self.wait(3)
 
-                
-
-
-        #grid()
+        # main code structure:        
         intro_gen()
         intro_mitose()
         mitose()
