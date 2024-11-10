@@ -1,7 +1,7 @@
 from manim import *
 import random
 import math
-from tools import Tools
+from tools import Tools # tools py code : in tools
 
 tl = Tools()
 
